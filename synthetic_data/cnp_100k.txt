@@ -1,0 +1,44 @@
+--- dataset summary --- 
+output_file          = cnp_100k.csv
+n_samples            = 110000
+n_features           = 14
+pct_missing          = 0.00%
+
+--- model features --- 
+numeric_features     = ['transaction_amt', 'transaction_adj_amt']
+categorical_features = ['ip_address', 'email_address', 'phone_number', 'merchant_id', 'billing_city', 'billing_postal', 'billing_state', 'transaction_currency', 'transaction_avs', 'signature_image', 'transaction_type', 'transaction_env']
+
+--- dataset performance ---
+Train AUC Score        : 0.994313
+Eval  AUC Score        : 0.988550
+Test  AUC Score        : 0.983350
+
+--- score thresholds ---
+THR 	 FPR 	 TPR	 
+0.54	 0.01	 0.76
+0.23	 0.02	 0.84
+0.15	 0.03	 0.89
+0.10	 0.04	 0.91
+0.08	 0.05	 0.93
+0.06	 0.06	 0.94
+0.05	 0.07	 0.94
+0.04	 0.08	 0.95
+0.04	 0.09	 0.96
+0.03	 0.10	 0.96
+
+--- feature importance  ---
+transaction_env               	 0.8063
+transaction_adj_amt           	 0.6897
+transaction_amt               	 0.5672
+ip_address                    	 0.4954
+transaction_type              	 0.4184
+billing_city                  	 0.3296
+billing_postal                	 0.3001
+billing_state                 	 0.2928
+phone_number                  	 0.2897
+transaction_avs               	 0.2613
+transaction_currency          	 0.1703
+email_address                 	 0.1627
+merchant_id                   	 0.1297
+signature_image               	 0.1152
+
